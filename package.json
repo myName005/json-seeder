@@ -1,0 +1,19 @@
+{
+  "name": "json-seeder",
+  "version": "0.0.0",
+  "description": "packege to ganerate json objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myName005/json-seeder.git"
+  },
+  "author": "my-name005 <eer37779@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myName005/json-seeder/issues"
+  },
+  "homepage": "https://github.com/myName005/json-seeder#readme"
+}
