@@ -4,7 +4,7 @@
   "description": "packege to ganerate json objects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/simpleTest.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/myName005/json-seeder/issues"
   },
-  "homepage": "https://github.com/myName005/json-seeder#readme"
+  "homepage": "https://github.com/myName005/json-seeder#readme",
+  "dependencies": {
+    "clone": "^2.1.1"
+  }
 }
