@@ -4,7 +4,7 @@
 package for generating json/javascript object for testing.
 
 ## TODO
-- [ ] set basic class.
-- [ ] set "endpoint parsers" binder
-- [ ] add default endpoint parsers
+- [x] set foundation
+- [ ] add preset modifiers
+- [ ] add preset computed methods
 - [ ] add usage documontation
