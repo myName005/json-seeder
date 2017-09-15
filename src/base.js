@@ -1,6 +1,6 @@
 var Modifier = require('./modifier.js')
 var Computed = require('./computed.js')
-var JsonSeeder = {};
+var JsonSeeder = {}
 
 
 generateSubBlueprints = function (blueprint) {
@@ -11,6 +11,7 @@ generateSubBlueprints = function (blueprint) {
 		}
 	}
 }
+
 JsonSeeder.generate = function (blueprint) {
 	Modifier.apply(blueprint)
 	Computed.apply(blueprint)
@@ -18,5 +19,7 @@ JsonSeeder.generate = function (blueprint) {
 
 	return blueprint;
 }
+
+JsonSeeder.Modifiers = require('./modifiers.js')
 
 module.exports = JsonSeeder
