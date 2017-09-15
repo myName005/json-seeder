@@ -21,5 +21,6 @@ JsonSeeder.generate = function (blueprint) {
 }
 
 JsonSeeder.Modifiers = require('./modifiers.js')
+JsonSeeder.Computeds = require('./computeds.js')
 
 module.exports = JsonSeeder
