@@ -15,7 +15,6 @@ Modifiers.repeat = function (n,name) {
 
 			result.push( subBlueprint )
 		}
-		console.log(result)
 		return result
 	}
 }
