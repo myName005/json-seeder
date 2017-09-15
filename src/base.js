@@ -7,7 +7,7 @@ generateSubBlueprints = function (blueprint) {
 	for(var key in blueprint)
 	{
 		if(typeof(blueprint[key]) == 'object' ){
-			JsonSeeder.generate(blueprint[key])
+			blueprint[key] = JsonSeeder.generate(blueprint[key])
 		}
 	}
 }

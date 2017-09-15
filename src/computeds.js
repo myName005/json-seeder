@@ -1,3 +1,4 @@
+var loremIpsum = require('lorem-ipsum')
 var Computeds = {}
 var rand = Math.random
 var floor = Math.floor
@@ -21,4 +22,9 @@ Computeds.pickFrom = function (arr) {
 	}
 }
 
+Computeds.loremIpsum = function (options) {
+	return function (blueprint) {
+		return loremIpsum(options)
+	}
+}
 module.exports = Computeds
