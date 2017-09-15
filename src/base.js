@@ -13,11 +13,11 @@ generateSubBlueprints = function (blueprint) {
 }
 
 JsonSeeder.generate = function (blueprint) {
-	Modifier.apply(blueprint)
-	Computed.apply(blueprint)
-	generateSubBlueprints(blueprint)
+	var _blueprint = Modifier.apply(blueprint)
+	_blueprint = Computed.apply(_blueprint)
+	generateSubBlueprints(_blueprint)
 
-	return blueprint;
+	return _blueprint;
 }
 
 JsonSeeder.Modifiers = require('./modifiers.js')

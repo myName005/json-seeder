@@ -5,12 +5,12 @@ Modifier.apply =  function (blueprint) {
 		return blueprint
 	
 	var mods = blueprint._modifiers
-	blueprint._modifiers = null
 	delete blueprint._modifiers
-
+	var result = blueprint
 	for(var key in mods){
-		Object.assign( blueprint, mods[key](blueprint))
+		result =  mods[key](result)
 	}
+	return result
 }
 
 module.exports = Modifier;
