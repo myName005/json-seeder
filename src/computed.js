@@ -5,7 +5,7 @@ var extractName = function (key) {
 }
 
 var keyFilter = function(key){
-	return /^\:[a-zA-Z$_][a-zA-Z0-9_]*$/.test(key);
+	return key[0]==':';
 }
 
 Computed.apply = function (blueprint) {
@@ -14,6 +14,7 @@ Computed.apply = function (blueprint) {
 		var key = keys[i]
 		var name = extractName(key)
 		blueprint[name] = blueprint[key](blueprint)
+
 		delete blueprint[key]
 	}
 }
