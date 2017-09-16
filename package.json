@@ -1,6 +1,6 @@
 {
   "name": "json-seeder",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "packege to ganerate json objects",
   "main": "index.js",
   "scripts": {
